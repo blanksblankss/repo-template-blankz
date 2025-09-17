@@ -1,0 +1,15 @@
+name: Unity Tests
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  playmode-editmode-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Unity tests (GameCI)
+        uses: game-ci/unity-test-runner@v4
+        with:
+          unityVersion: 2022.3.51f1
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
