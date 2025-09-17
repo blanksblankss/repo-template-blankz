@@ -24,4 +24,4 @@ Short summary (1–2 sentences). Screenshot or GIF.
 See [CONTRIBUTING](CONTRIBUTING.md).
 
 ## License
-MIT © <IndieBlankz>
+MIT © IndieBlankz
